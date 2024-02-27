@@ -1,4 +1,3 @@
-// OpenAI API 키를 여기에 입력하세요. 실제 배포 시에는 이 키를 안전하게 관리해야 합니다.
 const API_KEY = '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';
 
 document.getElementById('sendButton').addEventListener('click', function() {
@@ -32,7 +31,7 @@ document.getElementById('sendButton').addEventListener('click', function() {
     .catch(error => {
         // 오류 처리
         const errorMessage = document.createElement('div');
-        errorMessage.textContent = `어시스턴트: 오류가 발생했습니다.`; // 오류 발생 시 메시지
+        errorMessage.textContent = `어시스턴트: 오류 발생.`; // 오류 발생 시 메시지
         chat.appendChild(errorMessage);
     });
 
